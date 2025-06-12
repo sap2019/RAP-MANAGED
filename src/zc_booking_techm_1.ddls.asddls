@@ -1,13 +1,18 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Projection view of Booking entity'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define view entity zc_booking_techm_1 as projection on zi_booking_techm_1
 {
     key TravelId,
     key BookingId,
     BookingDate,
+    @ObjectModel.text.element: ['CustomerName']
     CustomerId,
+    _Customer.FirstName as CustomerName,
+    @ObjectModel.text.element: [ 'CarrierName' ]
     CarrierId,
+    _Carrier.Name as CarrierName,
     ConnectionId,
     FlightDate,
     @Semantics.amount.currencyCode: 'CurrencyCode'

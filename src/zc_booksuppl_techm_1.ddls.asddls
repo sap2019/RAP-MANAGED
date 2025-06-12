@@ -1,6 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Booking Supp Projection View Manged'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define view entity zc_booksuppl_techm_1 as projection on zi_booksuppl_techm_1
 {
     key TravelId,

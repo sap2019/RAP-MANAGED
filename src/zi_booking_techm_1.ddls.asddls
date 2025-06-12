@@ -32,6 +32,7 @@ define view entity zi_booking_techm_1
       booking_status  as BookingStatus,
       //the persistent field last_changed_at plays a special role as a field ETag.
       @Semantics.systemDateTime.localInstanceLastChangedAt: true
+      
       last_changed_at as LastChangedAt,
       _BookingSuppl,
       _Travel,

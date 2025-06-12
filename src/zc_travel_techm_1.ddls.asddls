@@ -8,10 +8,10 @@ as projection on zi_travel_techm_1
 {
     key TravelId,
     @ObjectModel.text.element: [ 'AgencyName' ]
-    AgencyId,
+    AgencyID,
     _Agency.Name as AgencyName,
      @ObjectModel.text.element: [ 'CustomerName' ]
-    CustomerId,
+    CustomerID,
     _Customer.LastName as CustomerName,
     BeginDate,
     EndDate,
@@ -27,7 +27,7 @@ as projection on zi_travel_techm_1
 //    CreatedBy,
 //    CreatedAt,
 //    LastChangedBy,
-//    LastChangedAt,
+    LastChangedAt,
     /* Associations */
     _Agency,
     _Booking : redirected to composition child zc_booking_techm_1,
