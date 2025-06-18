@@ -52,9 +52,9 @@ annotate entity zc_booking_techm_1 with
   @UI.identification: [{ position: 50 }]
    @Consumption.valueHelpDefinition: [{ entity: {
                                                   name: '/DMO/I_Flight',
-                                                 element: 'ConnectionId'
+                                                 element: 'ConnectionID'
                                                 },
-      additionalBinding: [{ element: 'ConnectionId' , 
+      additionalBinding: [{ element: 'ConnectionID' , 
                             localElement: 'ConnectionID'},
                           { element: 'AirlineID' , 
                             localElement: 'CarrierId'},   
@@ -64,7 +64,7 @@ annotate entity zc_booking_techm_1 with
                             localElement: 'FlightPrice'}                                                                                   ]
   }]  
   @Search.defaultSearchElement: true
-  ConnectionId;
+  ConnectionID;
   @UI.lineItem: [{ position: 60 }]
   @UI.identification: [{ position: 60 }]
      @Consumption.valueHelpDefinition: [{ entity: {

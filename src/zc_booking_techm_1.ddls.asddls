@@ -13,7 +13,7 @@ define view entity zc_booking_techm_1 as projection on zi_booking_techm_1
     @ObjectModel.text.element: [ 'CarrierName' ]
     CarrierId,
     _Carrier.Name as CarrierName,
-    ConnectionId,
+    ConnectionID,
     FlightDate,
     @Semantics.amount.currencyCode: 'CurrencyCode'
     FlightPrice,

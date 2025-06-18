@@ -1,0 +1,5 @@
+@EndUserText.label: 'sd'
+define service Zui_travel_approver_1 {
+  expose Zc_TRAVEL_approver_1;
+  expose Zc_BOOKING_approver_1;
+}

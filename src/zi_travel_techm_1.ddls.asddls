@@ -29,8 +29,11 @@ define root view entity zi_travel_techm_1
       currency_code   as CurrencyCode,
       description     as Description,
       overall_status  as OverallStatus,
+      @Semantics.user.createdBy: true
       created_by      as CreatedBy,
+      @Semantics.systemDateTime.createdAt: true
       created_at      as CreatedAt,
+      @Semantics.user.createdBy: true
       last_changed_by as LastChangedBy,
       @Semantics.systemDateTime.localInstanceLastChangedAt: true
       last_changed_at as LastChangedAt,
